@@ -1,0 +1,10 @@
+Introduction
+  Background
+      Toronto has the best Chinese restaurants in North America, and it is a highly diverse city. Many new immigrants choose Toronto 
+    as their first place to live in Canada, and there is also a huge internation student community, which provides lots of business 
+    opportunities. Many new immigrants and students like Chinese cuisine, while there is not a good platform that give recommendations 
+    of the Chinese restaurants based on data. 
+Business Problem
+      I want to build a recommendation system that suggests your next place to eat based on the places your have been to, the infomation
+    about the venues including users likes and tips, the locations, etc. so the customers will get a short list of recommendations that
+    fit their taste.
