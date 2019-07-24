@@ -1,0 +1,15 @@
+Data Acquisition and Cleaning
+  I will soly use Foursquare APIs for data acquisition.
+  First, I will use "Search for venues" API to find the restaurants.
+    GET https://api.foursquare.com/v2/venues/search
+  I will choose Finch Subway Station as centre point, and find venues under "Chinese Restaurant" category, with distance <8km
+  to the centre point. The API gives me 50 results, in which we only need the venue_id, location(latitude and longitude), and 
+  name of the vanues.
+  Secondly, I will use "Get Users Who Liked a Venue" to find the users who gave likes to these restaurants.
+    GET https://api.foursquare.com/v2/venues/VENUE_ID/likes
+  The free API only gave me three users per venue, even there are hundreds of likes in some of the venues. However, we still
+  found some users gave more than one venues likes. So we can use this information to create clusters of the venues.
+  But I still want more data, so I use "Get a Venue's Tips" to collect more information.
+    GET https://api.foursquare.com/v2/venues/VENUE_ID/tips
+  The free API will give us 2 tips for each venue. To analyse the tips, I installed a python package "FuzzyWuzzy" that can compare
+  two strings and give their similarity value. I will use the values to build a matrix, which will also contribute to the modeling.
