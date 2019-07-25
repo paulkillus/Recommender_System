@@ -8,3 +8,6 @@ Business Problem
       I want to build a recommendation system that suggests your next place to eat based on the places your have been to, the infomation
     about the venues including users likes and tips, the locations, etc. so the customers will get a short list of recommendations that
     fit their taste.
+      This recommendation system can be used in services and applications like food delivery (UberEats) or online-seat-booking platform. 
+    With the understanding of customers' preference, the business/application could also send promotion messages to their users to increase
+    the revenue and create better customers experience.
